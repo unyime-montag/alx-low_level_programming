@@ -12,10 +12,10 @@ int _divider(int x, int n);
  **/
 int is_prime_number(int n)
 {
-  if (n <= 1)
-    return (0);
-  else
-    return (_divider(2, n));
+if (n <= 1)
+return (0);
+else
+return (_divider(2, n));
 }
 
 /**
@@ -29,10 +29,10 @@ int is_prime_number(int n)
  **/
 int _divider(int x, int n)
 {
-  if (x == n)
-    return (1);
-  else if (n % x == 0)
-    return (0);
-  else
-    return (_divider(++x, n));
+if (x == n)
+return (1);
+else if (n % x == 0)
+return (0);
+else
+return (_divider(++x, n));
 }
